@@ -43,16 +43,6 @@ by a simple `db.json` file, so submissions are genuinely saved and show up in th
 "Latest Feedback" list even after a page refresh, which felt more true to how a real
 feedback form would behave.
 
-## Screenshots
-
-**Validation error:**
-
-![Validation error](screenshots/validation-error.png)
-
-**Successful submission:**
-
-![Success with ID](screenshots/success.png)
-
 ## What I learned / what was hard
 
 Building this form was my first time connecting a frontend to a real API instead
