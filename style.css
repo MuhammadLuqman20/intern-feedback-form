@@ -80,6 +80,11 @@ button {
   border-radius: 4px;
   font-size: 15px;
   cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #2456b3;
 }
 
 button:disabled {
