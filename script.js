@@ -1,9 +1,15 @@
+// ── API Configuration ──────────────────────────────────────────
+// Change this one line to switch between local testing and deployed API
+// Local (json-server):  "http://localhost:3000"
+// Deployed (MockAPI.io): "https://YOUR-PROJECT-ID.mockapi.io"
+const API_BASE_URL = "http://localhost:3000";
+
 // Bonus: GET existing posts and show the latest 5
 async function loadPosts() {
   const postsList = document.getElementById("postsList");
 
   try {
-    const response = await fetch("http://localhost:3000/posts?_sort=id&_order=desc&_limit=5");
+    const response = await fetch(`${API_BASE_URL}/posts?_sort=id&_order=desc&_limit=5`);
 
     if (!response.ok) {
       throw new Error("Failed to load posts.");
@@ -114,7 +120,7 @@ form.addEventListener("submit", async function (e) {
   statusMessage.textContent = "";
 
   try {
-    const response = await fetch("http://localhost:3000/posts", {
+    const response = await fetch(`${API_BASE_URL}/posts`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, category, rating, message }),
