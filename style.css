@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2d6cdf;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2d6cdf;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 13px;
+  min-height: 16px;
+  display: block;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9db6e8;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+#statusMessage {
+  margin-top: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success {
+  color: #27ae60;
+}
+
+.failure {
+  color: #c0392b;
+}
+
+.posts-card {
+  margin-top: 20px;
+}
+
+.posts-card h2 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+
+#postsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#postsList li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#postsList li:last-child {
+  border-bottom: none;
+}
+
+.loading-text {
+  color: #888;
+}
+
+.new-post {
+  color: #1a7f4e;
+  font-weight: bold;
+}
+
+/* Responsive: keep the card comfortable on small phones (375px) */
+@media (max-width: 400px) {
+  .card {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* Responsive: don't let the form stretch too wide on large screens (1280px) */
+@media (min-width: 900px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .card {
+    max-width: 460px;
+  }
+}

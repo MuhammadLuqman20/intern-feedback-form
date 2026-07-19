@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intern Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="card">
+    <span class="eyebrow">Week 2 Program</span>
+    <h1>Intern Feedback Form</h1>
+    <p class="subtitle">Tell us how your week went — it takes less than a minute.</p>
+
+    <form id="feedbackForm" novalidate>
+
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Sara Ahmed" />
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="sara@example.com" />
+      <span class="error" id="emailError"></span>
+
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option value="">-- Select --</option>
+        <option value="General">General</option>
+        <option value="Bug report">Bug report</option>
+        <option value="Suggestion">Suggestion</option>
+      </select>
+      <span class="error" id="categoryError"></span>
+
+      <label for="rating">Rating (1–5)</label>
+      <select id="rating" name="rating">
+        <option value="">-- Select --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <span class="error" id="ratingError"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="What went well, what was hard..."></textarea>
+      <span class="char-count" id="charCount">0 / 500</span>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit" id="submitBtn">Submit</button>
+
+      <p id="statusMessage"></p>
+
+    </form>
+  </main>
+
+  <section class="card posts-card">
+    <h2>Latest Feedback</h2>
+    <ul id="postsList">
+      <li class="loading-text">Loading...</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
