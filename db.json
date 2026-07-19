@@ -1,53 +1,7 @@
 {
   "posts": [
-    {
-      "id": "1",
-      "name": "Ali Raza",
-      "email": "ali@example.com",
-      "category": "General",
-      "rating": "5",
-      "message": "Great first week, learned a lot about REST APIs."
-    },
-    {
-      "id": "2",
-      "name": "Sara Khan",
-      "email": "sara@example.com",
-      "category": "Suggestion",
-      "rating": "4",
-      "message": "Would be nice to have more pair programming sessions."
-    },
-    {
-      "name": "Muhammad Luqman",
-      "email": "12@gmail.com",
-      "category": "Bug report",
-      "rating": "4",
-      "message": "hie der ggg",
-      "id": "Y-fw588-rCc"
-    },
-    {
-      "name": "Muhammad Luqman",
-      "email": "12@gmail.com",
-      "category": "Suggestion",
-      "rating": "2",
-      "message": "aaaaaaaabbbbbbbb",
-      "id": "UVWwbTC355k"
-    },
-    {
-      "name": "Muhammad Luqman",
-      "email": "12@gmail.com",
-      "category": "General",
-      "rating": "4",
-      "message": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": "HFzUW3IXuIo"
-    },
-    {
-      "name": "Kahn G",
-      "email": "kahn@gmail.com",
-      "category": "General",
-      "rating": "4",
-      "message": "Good but need improvement",
-      "id": "3ZnIb75uWF0"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+    { "id": 1, "name": "Ali Raza", "email": "ali@example.com", "category": "General", "rating": "5", "message": "Great first week, learned a lot about REST APIs." },
+    { "id": 2, "name": "Sara Khan", "email": "sara@example.com", "category": "Suggestion", "rating": "4", "message": "Would be nice to have more pair programming sessions." },
+    { "id": 3, "name": "Bilal Ahmed", "email": "bilal@example.com", "category": "Bug report", "rating": "3", "message": "Found a small issue with the category dropdown on mobile." }
+  ]
 }
